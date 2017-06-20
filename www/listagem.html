@@ -1,0 +1,22 @@
+<ion-view>
+
+  <ion-content class="padding">
+
+    <form class="" action="javascript:void(0);" ng-submit="addLembrete(novoLembrete)">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" placeholder="Lembrete..." ng-model="novoLembrete.lembrete">
+        </label>
+        <button class="button button-block button-positive">Salvar</button>
+      </div>
+    </form>
+
+    <ul class="list">
+      <li class="item" ng-repeat="lembrete in lembretes">
+        {{lembrete}}
+      </li>
+    </ul>
+
+  </ion-content>
+
+</ion-view>
